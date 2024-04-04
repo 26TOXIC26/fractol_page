@@ -37,7 +37,7 @@
 }
 body 
 {
-    background: linear-gradient(-45deg, #ff6600, #ffcc00, #ff6699, #cc99ff);
+    background: linear-gradient(-45deg, #ffffff, #e7d485, #c04970, #969696);
     justify-content: center;
     align-items: center;
     min-height: 80vh;
@@ -69,15 +69,16 @@ body
     height: 15%;
     display: flex;
     justify-content: space-between;
-    margin: 14px 50px 0px 50px;
+    margin: 14px 4% 0px 4%;
     border: 1.8px solid black;
+    border-radius: 17px;
 }
 
 .words
 {
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    width: 20%;
     margin-right: 10px;
 }
 
@@ -127,6 +128,7 @@ body
     align-items: center;
     justify-content: center;
     border: 1.6px solid black;
+    border-radius: 10px;
     margin: 15px 26%;
 }
 
@@ -149,3 +151,136 @@ body
     margin-top: 15px;
 }
 
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1.9px solid black;
+  /* background-color: white; */
+  border-radius: 90px;
+  margin: 0px 25%;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: 1px solid black;
+  background: transparent;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #cc39a4;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: 1px solid black;
+  background: transparent;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.facebook {
+  margin-top: 1.5em;
+  margin-left: -.9em;
+  fill: #4303f4;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: 1px solid black;
+  background: transparent;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.github {
+  margin-top: -.6em;
+  margin-left: 1.2em;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: 1px solid black;
+  background: transparent;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.linkedin {
+  margin-top: -.9em;
+  margin-left: -1.2em;
+  fill: #0026ff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #0703f4;
+}
+
+.card2:hover .facebook {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #001486;
+}
+
+.card4:hover .linkedin {
+  fill: rgb(255, 255, 255);
+}
